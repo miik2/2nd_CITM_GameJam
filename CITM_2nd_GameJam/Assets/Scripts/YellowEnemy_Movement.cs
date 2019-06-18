@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class YellowEnemy_Movement : MonoBehaviour
 {
-	public float tumble;
-
-    void Start()
-    {
-		GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;
-    }
-
-    void Update()
-    {
-        
-    }
+	
 }

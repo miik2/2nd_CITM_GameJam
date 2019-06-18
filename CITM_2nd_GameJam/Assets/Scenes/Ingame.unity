@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.066037714, g: 0.066037714, b: 0.066037714, a: 1}
+  m_AmbientSkyColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -780,6 +780,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 101308576, guid: bdbfe0cb35755c94ba86f68fa0a83ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.507
+      objectReference: {fileID: 0}
+    - target: {fileID: 101308576, guid: bdbfe0cb35755c94ba86f68fa0a83ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.485
+      objectReference: {fileID: 0}
+    - target: {fileID: 101308577, guid: bdbfe0cb35755c94ba86f68fa0a83ece, type: 3}
+      propertyPath: m_SpotAngle
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 101308577, guid: bdbfe0cb35755c94ba86f68fa0a83ece, type: 3}
+      propertyPath: m_Range
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdbfe0cb35755c94ba86f68fa0a83ece, type: 3}
 --- !u!1 &1736284444
@@ -792,9 +808,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1736284448}
   - component: {fileID: 1736284447}
-  - component: {fileID: 1736284446}
   - component: {fileID: 1736284445}
   - component: {fileID: 1736284449}
+  - component: {fileID: 1736284446}
   m_Layer: 0
   m_Name: YellowEnemy
   m_TagString: Untagged
@@ -814,10 +830,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0506bd7b95db3a74c92eb84bd7278a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   targetToFollow: {fileID: 2015176051}
---- !u!70 &1736284446
-CapsuleCollider2D:
+--- !u!61 &1736284446
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -829,9 +845,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000000022844873, y: -0.01916367}
-  m_Size: {x: 1.1820538, y: 0.61674184}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1, y: 0.64}
+    newSize: {x: 1.1, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!50 &1736284447
 Rigidbody2D:
   serializedVersion: 4

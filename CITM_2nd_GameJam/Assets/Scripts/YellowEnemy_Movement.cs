@@ -17,6 +17,6 @@ public class YellowEnemy_Movement : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(targetToFollow.position.x, targetToFollow.position.y, transform.position.z), speed * Time.deltaTime);
- 
+
     }
 }

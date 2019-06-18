@@ -8,6 +8,13 @@ public class Player_Movement : MonoBehaviour
 	private Rigidbody2D player;
     private float rotationSpeed = 0;
     public float RotationSmoothing;
+
+	public GameObject shot;
+	public Transform shotSpawn;
+	public float fireRate;
+
+	private float nextFire;
+
     // Start is called before the first frame update
     void Start()
     {	
@@ -37,6 +44,13 @@ public class Player_Movement : MonoBehaviour
             rotationSpeed -= RotationSmoothing;
         else if (rotationSpeed < 0)
             rotationSpeed += RotationSmoothing;
+
+		// Torpede shooting 
+		if(Input.GetKey(KeyCode.Space) && Time.time >nextFire)
+		{
+			nextFire = Time.time + fireRate;
+			Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+		}
     }
 
 }

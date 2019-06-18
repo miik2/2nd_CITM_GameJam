@@ -1,9 +1,5 @@
-# CITM_GameJam_ProvisionalName
-Repository for the game developed during the 2nd CITM Great Game jam
-
 # Torpedo Inbound! by MiiK2
-
-This is a Game Jam project made by 5 [Centre de la Imatge i la Tecnologia Multimedia](https://www.citm.upc.edu/ing/) students in which we make a submarine shooter game in the depths of the ocean using the [Unity](https://unity.com/) 2D Engine and the [Tiled Map Editor](https://www.mapeditor.org/) software.
+This is a Game Jam project made by 5 [Centre de la Imatge i la Tecnologia Multimedia](https://www.citm.upc.edu/ing/) students during the 2nd CITM Game Jam in which we make a submarine shooter game in the depths of the ocean using the [Unity](https://unity.com/) 2D Engine and the [Tiled Map Editor](https://www.mapeditor.org/) software.
 
 Feel free to visit our [Repository](https://github.com/miik2/2nd_CITM_GameJam)!
 

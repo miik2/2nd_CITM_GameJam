@@ -815,7 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  targetToFollow: {fileID: 0}
+  targetToFollow: {fileID: 2015176051}
 --- !u!70 &1736284446
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -919,6 +919,12 @@ SpriteRenderer:
 --- !u!1 &2015176046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1396035401, guid: bdbfe0cb35755c94ba86f68fa0a83ece,
+    type: 3}
+  m_PrefabInstance: {fileID: 1563058296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2015176051 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1396035406, guid: bdbfe0cb35755c94ba86f68fa0a83ece,
     type: 3}
   m_PrefabInstance: {fileID: 1563058296}
   m_PrefabAsset: {fileID: 0}

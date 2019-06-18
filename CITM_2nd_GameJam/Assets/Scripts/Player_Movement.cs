@@ -17,16 +17,16 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.W))
-            player.velocity = transform.up * speed;
+            player.velocity = -transform.right * speed;
 
         if (Input.GetKey(KeyCode.S))
-            player.velocity = -transform.up * speed;
+            player.velocity = transform.right * speed;
 
         if (Input.GetKey(KeyCode.A))
-            transform.Rotate(0, 0, 3);
+            transform.Rotate(0, 0, 2);
 
         if (Input.GetKey(KeyCode.D))
-            transform.Rotate(0, 0, -3);
+            transform.Rotate(0, 0, -2);
 
         player.AddForce(transform.forward * speed);
     }

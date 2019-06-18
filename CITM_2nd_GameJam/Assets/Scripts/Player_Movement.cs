@@ -27,10 +27,8 @@ public class Player_Movement : MonoBehaviour
         transform.Rotate(0, 0, rotationSpeed);
 
         if (Input.GetKey(KeyCode.W))
-            player.velocity = -transform.right * speed;
-
-        if (Input.GetKey(KeyCode.S))
             player.velocity = transform.right * speed;
+
 
         if (Input.GetKey(KeyCode.A))
             rotationSpeed = 2;

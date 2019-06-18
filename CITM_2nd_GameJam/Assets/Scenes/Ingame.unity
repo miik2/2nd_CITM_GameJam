@@ -363,7 +363,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f516bd0ccc6b1ab4db71938ccfb589bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68b3b5764e44d744fb653f045ca87a27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -381,14 +381,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506715263}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 10, z: 10}
-  m_LocalScale: {x: 0.27435, y: 0.27435, z: 0.27435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2072254685}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1506715267
 Rigidbody2D:
   serializedVersion: 4
@@ -427,14 +427,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.73, y: 7.2}
+    oldSize: {x: 1.36, y: 0.74}
     newSize: {x: 1.73, y: 7.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.73, y: 7.2}
+  m_Size: {x: 1.36, y: 0.74}
   m_EdgeRadius: 0
 --- !u!1 &1530248542
 GameObject:
@@ -854,13 +854,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072254684}
-  m_LocalRotation: {x: -0, y: 0.5786169, z: 0.81559944, w: 0.000000029802319}
-  m_LocalPosition: {x: -0, y: 1.62, z: 4.21}
-  m_LocalScale: {x: 3.6449797, y: 3.6449797, z: 3.6449795}
+  m_LocalRotation: {x: 0.410619, y: 0.410619, z: -0.5756666, w: -0.5756666}
+  m_LocalPosition: {x: -0.26, y: -0.1, z: 1.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1506715266}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 180, y: -109.293, z: -90}
+  m_LocalEulerAnglesHint: {x: 180, y: 109, z: -90}
 --- !u!108 &2072254686
 Light:
   m_ObjectHideFlags: 0

@@ -16,10 +16,19 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        if (Input.GetKey(KeyCode.W))
+            player.velocity = transform.up * speed;
 
-        player.AddForce(movement * speed);
+        if (Input.GetKey(KeyCode.S))
+            player.velocity = -transform.up * speed;
+
+        if (Input.GetKey(KeyCode.A))
+            transform.Rotate(0, 0, 3);
+
+        if (Input.GetKey(KeyCode.D))
+            transform.Rotate(0, 0, -3);
+
+        player.AddForce(transform.forward * speed);
     }
+
 }

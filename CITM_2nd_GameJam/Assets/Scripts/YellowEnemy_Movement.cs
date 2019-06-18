@@ -18,6 +18,5 @@ public class YellowEnemy_Movement : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, targetToFollow.position) > 5)
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(targetToFollow.position.x, targetToFollow.position.y, transform.position.z), speed * Time.deltaTime);
-
     }
 }

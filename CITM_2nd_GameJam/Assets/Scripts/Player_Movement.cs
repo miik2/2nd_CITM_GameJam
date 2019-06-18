@@ -6,7 +6,8 @@ public class Player_Movement : MonoBehaviour
 {
 	public float speed;
 	private Rigidbody2D player;
-
+    private float rotationSpeed = 0;
+    public float RotationSmoothing;
     // Start is called before the first frame update
     void Start()
     {	
@@ -16,6 +17,8 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.Rotate(0, 0, rotationSpeed);
+
         if (Input.GetKey(KeyCode.W))
             player.velocity = -transform.right * speed;
 
@@ -23,12 +26,17 @@ public class Player_Movement : MonoBehaviour
             player.velocity = transform.right * speed;
 
         if (Input.GetKey(KeyCode.A))
-            transform.Rotate(0, 0, 2);
+            rotationSpeed = 2;
 
         if (Input.GetKey(KeyCode.D))
-            transform.Rotate(0, 0, -2);
+            rotationSpeed = -2;
 
         player.AddForce(transform.forward * speed);
+
+        if (rotationSpeed > 0)
+            rotationSpeed -= RotationSmoothing;
+        else if (rotationSpeed < 0)
+            rotationSpeed += RotationSmoothing;
     }
 
 }

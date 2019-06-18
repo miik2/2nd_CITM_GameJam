@@ -46,7 +46,7 @@ public class Player_Movement : MonoBehaviour
             rotationSpeed += RotationSmoothing;
 
 		// Torpede shooting 
-		if(Input.GetKey(KeyCode.Space) && Time.time >nextFire)
+		if(Input.GetKey(KeyCode.Space) && Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
 			Instantiate (shot, shotSpawn.position, shotSpawn.rotation);

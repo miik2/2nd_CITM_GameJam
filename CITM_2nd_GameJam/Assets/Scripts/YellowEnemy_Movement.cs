@@ -5,7 +5,10 @@ using UnityEngine;
 public class YellowEnemy_Movement : MonoBehaviour
 {
     public float speed = 1.0f;
+    public float shot_speed;
+
     public Transform targetToFollow;
+
 
     // Use this for initialization
     void Start()

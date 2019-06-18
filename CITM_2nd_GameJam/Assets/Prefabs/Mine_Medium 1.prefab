@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3966890801713823256}
   - component: {fileID: 3159465209496460739}
   - component: {fileID: 7416358438741292158}
+  - component: {fileID: 2192568450153554901}
   - component: {fileID: 4868237715802870452}
   m_Layer: 0
   m_Name: Mine_Medium 1
@@ -111,6 +112,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2192568450153554901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5691569834110726331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ae85556f5764546b84789aa30d5b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
+    type: 3}
+  playerExplosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
+    type: 3}
 --- !u!136 &4868237715802870452
 CapsuleCollider:
   m_ObjectHideFlags: 0

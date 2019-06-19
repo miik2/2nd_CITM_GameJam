@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
     type: 3}
-  playerExplosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
+  playerExplosion: {fileID: 6215038801947598562, guid: 2df2f0aa42468bb41967f7264940b371,
     type: 3}
 --- !u!136 &4868237715802870452
 CapsuleCollider:

@@ -10,13 +10,18 @@ public class FadeToGameOver : MonoBehaviour
 	public Image fadeblack;
 	public float timetofade;
 	private float timeleft;
+
 	private bool startcounter;
+	private bool goingToMenu;
+	private bool restartingGame;
 
 	void Start ()
 	{
 		fadeblack.canvasRenderer.SetAlpha(0.0f);
 		timeleft = timetofade;
 		startcounter = false;
+		goingToMenu = false;
+		restartingGame = false;
 
 	}
 
@@ -26,7 +31,13 @@ public class FadeToGameOver : MonoBehaviour
 		{
 			fadeIn();
 			startcounter = true;
-
+			restartingGame = true;
+		}
+		else if (Input.GetKeyDown(KeyCode.M))
+		{
+			fadeIn();
+			startcounter = true;
+			goingToMenu = true;			
 		}
 		else
 		{
@@ -39,7 +50,10 @@ public class FadeToGameOver : MonoBehaviour
 		}
 
 		if(timeleft <0)
-			SceneManager.LoadScene("MainMenu");
+		{
+			if (goingToMenu) SceneManager.LoadScene("MainMenu");
+			if (restartingGame) SceneManager.LoadScene("Ingame");
+		}
 
 
 	}

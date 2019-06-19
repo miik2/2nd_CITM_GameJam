@@ -402,6 +402,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5218488832161433853, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5218488832161433824, guid: 73f29aaf942726c4882b4a80813c99e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -457,16 +462,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5218488832161433853, guid: 73f29aaf942726c4882b4a80813c99e7,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 5218488832161433826, guid: 73f29aaf942726c4882b4a80813c99e7,
         type: 3}
       propertyPath: fireRate
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 5218488832161433826, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: shot
+      value: 
+      objectReference: {fileID: 8775204220646409708, guid: fd47f2f47af8bf7448bea31a1f63e01a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f29aaf942726c4882b4a80813c99e7, type: 3}
 --- !u!1 &995534989
@@ -903,11 +909,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3462780504072496940, guid: 7623325d0722955459c8ca399c6e7cb4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4093571676611718924, guid: 7623325d0722955459c8ca399c6e7cb4,
         type: 3}
       propertyPath: m_Name
@@ -1002,6 +1003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462780504072496940, guid: 7623325d0722955459c8ca399c6e7cb4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7623325d0722955459c8ca399c6e7cb4, type: 3}

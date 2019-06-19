@@ -1,5 +1,8 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DestroyByContact : MonoBehaviour
 {
@@ -21,9 +24,9 @@ public class DestroyByContact : MonoBehaviour
 
             Instantiate(explosion, transform.position, transform.rotation);
 
-            if (other.tag == "Player")
+            if (gameObject.tag == "Player")
             {
-                Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+				SceneManager.LoadScene("GameOver");
             }
 
             if (gameObject.tag == "Torpede" && other.gameObject.tag == "Enemy" || gameObject.tag == "Enemy" && other.gameObject.tag == "Torpede")

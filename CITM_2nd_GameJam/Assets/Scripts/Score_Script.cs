@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Score_Script : MonoBehaviour
 {
-    public TextMesh scoreText;
+    public static TextMesh scoreText;
     public static int scoreValue = 0;
 
     private static bool mustUpdate;

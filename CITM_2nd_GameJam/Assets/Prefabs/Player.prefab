@@ -72,6 +72,56 @@ PrefabInstance:
       propertyPath: shotSpawn
       value: 
       objectReference: {fileID: 8993483324692999067}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.37244844
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.37244844
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.60106754
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.60106754
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 243.56801
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.422
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.177
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267625, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0479
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267624, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267624, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f29aaf942726c4882b4a80813c99e7, type: 3}
 --- !u!4 &8993483324692999067 stripped

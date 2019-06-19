@@ -26,7 +26,7 @@ public class DestroyByContact : MonoBehaviour
                 Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
             }
 
-            else
+            if (gameObject.tag == "Player" && other.gameObject.tag == "Enemy" || gameObject.tag == "Enemy" && other.gameObject.tag == "Player")
             {
                 Score_Script.AddScore(10);
             }

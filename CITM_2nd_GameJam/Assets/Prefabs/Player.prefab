@@ -204,7 +204,7 @@ MonoBehaviour:
   shot: {fileID: 8775204220646409708, guid: fd47f2f47af8bf7448bea31a1f63e01a, type: 3}
   shotSpawn: {fileID: 5218488831833589297}
   fireRate: 0.2
-  mineRate: 1
+  mineRate: 0.5
   mine: {fileID: 223001472037370745, guid: 2da77e4e51b6640408be3281d99e32e6, type: 3}
   mineSpawn: {fileID: 4358863371802485788}
 --- !u!50 &5218488832161433827

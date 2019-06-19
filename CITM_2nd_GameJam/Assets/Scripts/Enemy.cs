@@ -12,8 +12,10 @@ public class Enemy : MonoBehaviour
     public float startTimeBtwShots;
 
     public GameObject shots;
+    public Transform shotSpawn;
 
     public Transform player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,7 @@ public class Enemy : MonoBehaviour
 
         if (timeBtwShots <=0)
         {
-            Instantiate(shots, transform.position, Quaternion.identity);
+            Instantiate(shots, shotSpawn.position, shotSpawn.rotation);
             timeBtwShots = startTimeBtwShots;
         } 
         else

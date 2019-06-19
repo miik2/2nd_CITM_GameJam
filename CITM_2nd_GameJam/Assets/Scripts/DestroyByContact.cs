@@ -8,7 +8,7 @@ public class DestroyByContact : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other) 
 	{
-        if (gameObject.tag == "Enemy" && other.gameObject.tag == "Enemy")
+		if ((gameObject.tag == "Enemy" && other.gameObject.tag == "Enemy") || (gameObject.tag == "Player" && other.gameObject.tag == "Torpede"))
         {
             return;
         }

@@ -8,6 +8,6 @@ public class TorpedeMover : MonoBehaviour
 
 	void Start()
 	{
-		GetComponent<Rigidbody>().velocity = transform.right * speed;
+		GetComponent<Rigidbody2D>().velocity = transform.right * speed;
 	}
 }

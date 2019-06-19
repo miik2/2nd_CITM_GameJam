@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3462780503685675985}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.3, y: -0.153, z: 0.027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18, y: 0.01, z: 0.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3462780504072496940}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3462780504072496933
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   startTimeBtwShots: 6
   shots: {fileID: 537417520264170154, guid: 23b1225d269a20b4ba3f2cc9880c7ec6, type: 3}
   shotSpawn: {fileID: 3462780503685675998}
-  player: {fileID: 5218488832161433824, guid: 73f29aaf942726c4882b4a80813c99e7, type: 3}
+  player: {fileID: 0}
 --- !u!50 &3462780504072496930
 Rigidbody2D:
   serializedVersion: 4

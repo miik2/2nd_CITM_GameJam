@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &563019886859173195
 Transform:
   m_ObjectHideFlags: 0
@@ -45,8 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ae85556f5764546b84789aa30d5b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
-  playerExplosion: {fileID: 0}
+  explosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
+    type: 3}
+  playerExplosion: {fileID: 6215038801947598562, guid: 2df2f0aa42468bb41967f7264940b371,
+    type: 3}
 --- !u!58 &5021430436442750670
 CircleCollider2D:
   m_ObjectHideFlags: 0

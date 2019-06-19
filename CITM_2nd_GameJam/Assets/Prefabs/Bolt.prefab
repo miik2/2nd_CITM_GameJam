@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1135542061853625503}
   - component: {fileID: 1526445410956504594}
   - component: {fileID: 5287766653009012308}
+  - component: {fileID: 2340538923224730047}
   m_Layer: 0
   m_Name: Bolt
   m_TagString: Enemy
@@ -195,6 +196,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 5}
   m_EdgeRadius: 0
+--- !u!114 &2340538923224730047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537417520264170154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ae85556f5764546b84789aa30d5b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
+    type: 3}
+  playerExplosion: {fileID: 6215038801947598562, guid: 2df2f0aa42468bb41967f7264940b371,
+    type: 3}
 --- !u!1 &6139842483485562061
 GameObject:
   m_ObjectHideFlags: 0

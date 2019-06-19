@@ -5,7 +5,7 @@ using UnityEngine;
 public class Score_Script : MonoBehaviour
 {
     public TextMesh scoreText;
-    public static int scoreValue;
+    public static int scoreValue = 0;
 
     private static bool mustUpdate;
 
@@ -13,7 +13,6 @@ public class Score_Script : MonoBehaviour
     void Start()
     {
         scoreText = GetComponent<TextMesh>();
-        scoreValue = 0;
         scoreText.text = "Score: " + scoreValue.ToString();
     }
 

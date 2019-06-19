@@ -43,9 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb5eaf47b8bcfe04a9142e617c292323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hazard: {fileID: 3462780504072496933, guid: 7623325d0722955459c8ca399c6e7cb4, type: 3}
-  spawnValues: {x: 20, y: 15, z: 10}
-  hazardCount: 0
-  spawnWait: 0.5
-  startWait: 1
-  waveWait: 4
+  hazard1: {fileID: 0}
+  spawnArea1: {x: 50, y: 30, z: 11.9}
+  numSpawns1: 4
+  hazard2: {fileID: 0}
+  spawnArea2: {x: 50, y: 34, z: 11.7}
+  numSpawns2: 2
+  hazard3: {fileID: 3569137701537237275, guid: a1eaa82054bea8f44a6dbec1bf28394f, type: 3}
+  spawnArea3: {x: 50, y: 30, z: 11.85}
+  numSpawns3: 6
+  spawnWait: 1
+  startWait: 3
+  waveWait: 10

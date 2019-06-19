@@ -9,16 +9,25 @@ public class Player_Movement : MonoBehaviour
     private float rotationSpeed = 0;
     public float RotationSmoothing;
 
+    private float origSpeed;
+
+    public float accelerration;
+    public float speedCeiling;
+
 	public GameObject shot;
 	public Transform shotSpawn;
 	public float fireRate;
+    public float mineRate;
 
-	private float nextFire;
+    public GameObject mine;
+    public Transform mineSpawn;
+    private float nextFire;
 
     // Start is called before the first frame update
     void Start()
     {	
 		player = GetComponent<Rigidbody2D> ();
+        origSpeed = speed;
     }
 
     // Update is called once per frame
@@ -43,12 +52,28 @@ public class Player_Movement : MonoBehaviour
         else if (rotationSpeed < 0)
             rotationSpeed += RotationSmoothing;
 
-		// Torpede shooting 
-		if(Input.GetKey(KeyCode.Space) && Time.time > nextFire)
+        // Speed Boost
+        if (Input.GetKey(KeyCode.LeftShift) && speed < speedCeiling)
+        {
+            speed += accelerration;
+        }
+        else if (speed > origSpeed)
+        {
+            speed -= accelerration;
+        }
+
+        // Torpede shooting 
+        if (Input.GetKey(KeyCode.Space) && Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
 			Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 		}
+
+        else if (Input.GetKey(KeyCode.LeftControl) && Time.time > nextFire)
+        {
+            nextFire = Time.time + mineRate;
+            Instantiate(mine, mineSpawn.position, mineSpawn.rotation);
+        }
     }
 
 }

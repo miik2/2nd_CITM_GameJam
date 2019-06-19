@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5218488831744267624}
   m_Layer: 0
   m_Name: Spot Light
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,9 +42,9 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.9528302, g: 0.9361568, b: 0.68765575, a: 1}
-  m_Intensity: 7
-  m_Range: 60
-  m_SpotAngle: 60
+  m_Intensity: 11.7
+  m_Range: 74.61
+  m_SpotAngle: 96
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 5218488831833589297}
   m_Layer: 0
   m_Name: ShotSpawn
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 5218488832161433826}
   - component: {fileID: 5218488832161433827}
   - component: {fileID: 5218488832161433852}
+  - component: {fileID: 1829078991}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -132,6 +133,7 @@ Transform:
   m_Children:
   - {fileID: 5218488831744267625}
   - {fileID: 5218488831833589297}
+  - {fileID: 4358863371802485788}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -197,9 +199,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   RotationSmoothing: 0.05
-  shot: {fileID: 537417520264170154, guid: 23b1225d269a20b4ba3f2cc9880c7ec6, type: 3}
+  accelerration: 0.2
+  speedCeiling: 8
+  shot: {fileID: 8775204220646409708, guid: fd47f2f47af8bf7448bea31a1f63e01a, type: 3}
   shotSpawn: {fileID: 5218488831833589297}
-  fireRate: 0.25
+  fireRate: 0.2
+  mineRate: 1
+  mine: {fileID: 223001472037370745, guid: 2da77e4e51b6640408be3281d99e32e6, type: 3}
+  mineSpawn: {fileID: 4358863371802485788}
 --- !u!50 &5218488832161433827
 Rigidbody2D:
   serializedVersion: 4
@@ -247,3 +254,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.36, y: 0.74}
   m_EdgeRadius: 0
+--- !u!114 &1829078991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218488832161433853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ae85556f5764546b84789aa30d5b15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 6215038801947598562, guid: 2df2f0aa42468bb41967f7264940b371,
+    type: 3}
+  playerExplosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
+    type: 3}
+--- !u!1 &7508211779135600237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4358863371802485788}
+  m_Layer: 0
+  m_Name: MineSpawn
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4358863371802485788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508211779135600237}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.2589, y: -0.099, z: 0.0327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5218488832161433824}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

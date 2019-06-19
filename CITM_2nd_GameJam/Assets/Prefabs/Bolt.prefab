@@ -49,6 +49,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotateSpeed: 200
+  activeTime: 15
+  explosion: {fileID: 9017821341192265529, guid: eb04079644179454bad090e8b6f068c7,
+    type: 3}
 --- !u!82 &1135542061853625503
 AudioSource:
   m_ObjectHideFlags: 0

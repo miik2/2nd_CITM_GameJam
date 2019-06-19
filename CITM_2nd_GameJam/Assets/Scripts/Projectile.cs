@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float A;
 
-    private Transform player;
-    private Vector2 target;
+    private Transform target;
+
+    public float speed = 5f;
+    public float rotateSpeed = 200f;
+
+    private Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        target = new Vector3(player.position.x, player.position.y, player.position.z);
+        rb = GetComponent<Rigidbody2D>();
+        target = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(player.position.x, player.position.y, transform.position.z), A * Time.deltaTime);
+        Vector2 direction = (Vector2)target.position - rb.position;
+
+        direction.Normalize();
+
+        float rotateAmount = Vector3.Cross(direction, transform.up).z;
+
+        rb.angularVelocity = -rotateAmount * rotateSpeed;
+
+        rb.velocity = transform.up * speed;
     }
 }

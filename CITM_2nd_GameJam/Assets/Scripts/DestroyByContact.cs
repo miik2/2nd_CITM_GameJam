@@ -29,7 +29,7 @@ public class DestroyByContact : MonoBehaviour
 				SceneManager.LoadScene("GameOver");
             }
 
-            if (gameObject.tag == "Torpede" && other.gameObject.tag == "Enemy" || gameObject.tag == "Enemy" && other.gameObject.tag == "Torpede")
+			if ((gameObject.tag == "Torpede" && other.gameObject.tag == "Enemy") || (gameObject.tag == "Enemy" && other.gameObject.tag == "Torpede"))
             {
                 Score_Script.AddScore(10);
             }

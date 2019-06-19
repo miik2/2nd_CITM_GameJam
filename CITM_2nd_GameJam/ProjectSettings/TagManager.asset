@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Torpede
   - Map_Boundary
+  - Mine
   layers:
   - Default
   - TransparentFX

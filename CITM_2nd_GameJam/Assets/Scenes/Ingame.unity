@@ -465,7 +465,7 @@ PrefabInstance:
     - target: {fileID: 5218488832161433826, guid: 73f29aaf942726c4882b4a80813c99e7,
         type: 3}
       propertyPath: fireRate
-      value: 0.25
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5218488832161433826, guid: 73f29aaf942726c4882b4a80813c99e7,
         type: 3}
@@ -473,6 +473,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8775204220646409708, guid: fd47f2f47af8bf7448bea31a1f63e01a,
         type: 3}
+    - target: {fileID: 5218488831744267624, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_Range
+      value: 74.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267624, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 5218488831744267624, guid: 73f29aaf942726c4882b4a80813c99e7,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 11.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f29aaf942726c4882b4a80813c99e7, type: 3}
 --- !u!1 &995534989
@@ -1008,6 +1023,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462780504072496940, guid: 7623325d0722955459c8ca399c6e7cb4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462780504072496940, guid: 7623325d0722955459c8ca399c6e7cb4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7623325d0722955459c8ca399c6e7cb4, type: 3}
@@ -1600,6 +1625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy_Ship
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911884911598226837, guid: ba59fc218b024f3489c1ffdfc3fbfd21,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6911884911598226834, guid: ba59fc218b024f3489c1ffdfc3fbfd21,
         type: 3}
